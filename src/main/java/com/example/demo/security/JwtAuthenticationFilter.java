@@ -46,6 +46,9 @@ public class JwtAuthenticationFilter extends AbstractAuthenticationProcessingFil
 //	        response.addHeader("Access-Control-Allow-Headers", headers );
 //	    }
 //		
+		
+		System.out.println("Token value getting from header 'token' ");
+		
 		String authenticationToken=headerToken.substring(6).trim();
 		
 		System.out.println("Auth values"+authenticationToken);
